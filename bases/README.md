@@ -1,5 +1,8 @@
 # Bases de TypeScript
 
+Información oficial de los tipos básicos:
+https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+
 Proyecto creado con
 
 ```

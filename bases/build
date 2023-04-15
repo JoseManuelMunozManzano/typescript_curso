@@ -1,0 +1,40 @@
+"use strict";
+// Proyecto creado con
+// npm init
+//
+// Instalación de Typescript
+// npm i -D typescript
+//
+// Generación de fichero tsconfig.json
+// npx tsc --init
+//
+// Se crea en package.json el script build
+//
+// Transpilar con
+// npm run build
+const msg = 'Hola mundo!';
+const hero = {
+    name: 'Iron Man',
+    age: 45,
+};
+console.log(hero);
+//                01 - INFERIR TIPOS Y MODO ESTRICTO
+// tipo de dato es 10 porque es una constante y no se puede cambiar a otro valor.
+const a = 10;
+// tipo de dato es number porque es variable y se puede cambiar a otro número.
+let b = 10;
+// Lo mejor es que TypeScript no infiera el tipo de dato, indicárselo nosotros.
+// Ahora la constante a1 y b1 es un tipo de dato number.
+const a1 = 10;
+let b1 = 10;
+// Tipo de dato any, puede ser cualquier cosa. Perdemos control porque b puede ser cualquier cosa.
+let b2;
+b2 = 3.1416;
+b2 = {};
+b2 = [];
+b2 = true;
+// Como el parámetro msg tiene tipo de dato any, da error.
+// Esto es porque en tsconfig.json la propiedad "noImplicitAny" tiene por defecto el valor a true.
+function sayHello(msg) {
+    console.log(msg);
+}
