@@ -32,7 +32,8 @@ Propiedades de tsconfig.json
         ]
     }
 
-  Si quisiéramos transpilar a JS algo que no es nuestro, por ejemplo (no recomendado) la carpeta node_modules:
+  Si quisiéramos transpilar a JS algo que no es nuestro, por ejemplo (no recomendado) la carpeta node_modules.
+  Pero ojo, que con outFile informado, solo transpila lo que indiquemos aquí.
 
     {
       "compilerOptions": {
@@ -41,3 +42,14 @@ Propiedades de tsconfig.json
           "node_modules2"
         ]
     }
+
+- Para que todos mis archivos .ts acaben transpilando a un único archivo .js en un directorio 
+  concreto para mantener un orden.
+  Como tengo los .js.map sigo sabiendo de que .ts viene cada cosa.
+
+    "outFile": "main.js"
+    "outDir":
+
+  NOTA: Para que funcione outFile hay que indicar en "module" el valor "amd" o "system"
+  Y ahora se pueden borrar todos los archivos .js que estén desperdigados por las carpetas donde están 
+  los fuentes .ts
