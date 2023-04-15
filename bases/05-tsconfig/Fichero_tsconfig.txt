@@ -12,10 +12,32 @@ Propiedades de tsconfig.json
   IMPORTANTE: En Chrome tenemos que tener, en Developer Tools, Settings / Preferences, activada la opción 
     Enable JavaScript source maps para que todo esto funcione.
 
-  "sourceMap": true,
+    "sourceMap": true,
 
 - Remover los comentarios de los archivos JS
   Puesto que no son necesarios, es una muy buena opción a activar.
 
-  "removeComments": true,
+    "removeComments": true,
 
+- Para incluir y excluir carpetas y/o archivos para que TS no transpile a JS.
+  Indicar que TS por defecto NO entra a la carpeta node_modules.
+
+  En el fichero tsconfig.json, después de la última propiedad y de cerrar la llave, se informa la propiedad:
+
+    {
+      "compilerOptions": {
+        },
+        "exclude": [
+          "node_modules2"
+        ]
+    }
+
+  Si quisiéramos transpilar a JS algo que no es nuestro, por ejemplo (no recomendado) la carpeta node_modules:
+
+    {
+      "compilerOptions": {
+        },
+        "include": [
+          "node_modules2"
+        ]
+    }
