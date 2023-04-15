@@ -29,3 +29,4 @@
     avenger = 23.456;
     console.log(avenger.toFixed(2));
 })();
+//# sourceMappingURL=05-any.js.map

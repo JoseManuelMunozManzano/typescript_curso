@@ -51,3 +51,4 @@
     mystique = charles;
     mystique = apocalipsis;
 })();
+//# sourceMappingURL=05-tarea.js.map

@@ -15,3 +15,4 @@
     const superman = fullName('Clark', 'Joseph', 'Kent');
     console.log({ superman });
 })();
+//# sourceMappingURL=05-paramRest.js.map

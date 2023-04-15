@@ -35,3 +35,4 @@
     const largoDelPoder = poder.length;
     console.log(largoDelPoder);
 })();
+//# sourceMappingURL=12-tarea.js.map

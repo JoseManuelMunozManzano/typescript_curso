@@ -23,3 +23,4 @@
     // A modo de broma, indicar que en TS, con la propiedad strictNullChecks a false, hay 4 valores permitidos:
     // true, false, undefined y null
 })();
+//# sourceMappingURL=11-nullYUndefined.js.map

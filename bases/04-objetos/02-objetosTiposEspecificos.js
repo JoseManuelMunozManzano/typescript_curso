@@ -36,3 +36,4 @@
     // ¿Y si ahora me dicen que powers ya no va a ser un arreglo de string sino de números? Tengo que estar cambiándolo en todos los sitios.
     // Para evitar este problema se van a crear tipos personalizados.
 })();
+//# sourceMappingURL=02-objetosTiposEspecificos.js.map

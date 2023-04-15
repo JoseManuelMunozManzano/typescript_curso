@@ -19,3 +19,4 @@
     const hero2 = ['Spiderman', 120, true];
     console.log(hero2);
 })();
+//# sourceMappingURL=07-tuplas.js.map

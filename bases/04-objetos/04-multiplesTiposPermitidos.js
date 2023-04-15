@@ -14,3 +14,4 @@
     // El tipo de dato es object. Recordar que en JS no existe el tipo Hero.
     console.log(typeof myCustomVariable);
 })();
+//# sourceMappingURL=04-multiplesTiposPermitidos.js.map

@@ -21,3 +21,4 @@
     let noName;
     const name2 = fullName(noName, 'Stark');
 })();
+//# sourceMappingURL=02-paramObligatorios.js.map

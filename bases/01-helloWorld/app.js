@@ -18,3 +18,4 @@ const hero = {
     age: 45,
 };
 console.log(hero);
+//# sourceMappingURL=app.js.map

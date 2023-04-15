@@ -37,3 +37,4 @@
         console.log(msg + ' ' + 'José');
     }
 })();
+//# sourceMappingURL=01-inferirTipos.js.map

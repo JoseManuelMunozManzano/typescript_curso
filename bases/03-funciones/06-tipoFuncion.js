@@ -26,3 +26,4 @@
     myFunction = saveTheWorld;
     console.log(myFunction());
 })();
+//# sourceMappingURL=06-tipoFuncion.js.map

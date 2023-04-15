@@ -26,3 +26,4 @@ const noHaceNada = (numero, texto, booleano, arreglo) => { };
 // Crear el tipo de funcion que acepte la funcion "noHaceNada"
 let noHaceNadaTampoco;
 noHaceNadaTampoco = noHaceNada;
+//# sourceMappingURL=07-tarea.js.map

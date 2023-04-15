@@ -1,0 +1,15 @@
+Propiedades de tsconfig.json
+
+- Para que las líneas de JS correspondan a las líneas de TS. 
+  Lo que hace es generarse un tercer archivo (tenemos el .ts, el .js y ahora genera el .js.map)
+  Útil cuando hay errores, para que informe la línea correcta de TS.
+  Se suele dejar en true en desarrollo y se pone a false en producción.
+  Si vemos un archivo .js generado, veremos al final un comentario que indica cual es su sourceMap.
+  Por ejemplo: //# sourceMappingURL=app.js.map
+  Y también se puede usar en Chrome las herramientas de developer tools para hacer breakpoints y depuraciones en los 
+  archivos .ts (en la pestaña Sources)
+  
+  IMPORTANTE: En Chrome tenemos que tener, en Developer Tools, Settings / Preferences, activada la opción 
+    Enable JavaScript source maps para que todo esto funcione.
+
+  "sourceMap": true,

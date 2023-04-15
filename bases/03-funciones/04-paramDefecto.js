@@ -23,3 +23,4 @@
     const name2 = fullName('Tony', 'Manero', true);
     console.log({ name2 });
 })();
+//# sourceMappingURL=04-paramDefecto.js.map

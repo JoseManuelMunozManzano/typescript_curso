@@ -17,3 +17,4 @@
     console.log(typeof activateBatisignal);
     const heroName = returnName();
 })();
+//# sourceMappingURL=01-functions.js.map
