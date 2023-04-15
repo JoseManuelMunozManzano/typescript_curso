@@ -47,7 +47,7 @@ Propiedades de tsconfig.json
   concreto para mantener un orden.
   Como tengo los .js.map sigo sabiendo de que .ts viene cada cosa.
 
-    "outFile": "main.js"
+    "outFile": "main.js",
     "outDir":
 
   NOTA: Para que funcione outFile hay que indicar en "module" el valor "amd" o "system"
