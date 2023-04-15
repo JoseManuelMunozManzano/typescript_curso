@@ -3,6 +3,9 @@
 Información oficial de los tipos básicos:
 https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
 
+Información oficial archivo tsconfig.json:
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
 Proyecto creado con
 
 ```
