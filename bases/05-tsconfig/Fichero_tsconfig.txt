@@ -13,3 +13,9 @@ Propiedades de tsconfig.json
     Enable JavaScript source maps para que todo esto funcione.
 
   "sourceMap": true,
+
+- Remover los comentarios de los archivos JS
+  Puesto que no son necesarios, es una muy buena opción a activar.
+
+  "removeComments": true,
+

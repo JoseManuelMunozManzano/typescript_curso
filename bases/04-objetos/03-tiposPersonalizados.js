@@ -1,7 +1,6 @@
 "use strict";
 (() => {
     console.log('TIPOS PERSONALIZADOS');
-    // Ahora usamos nuestro tipo personalizado.
     let flash = {
         name: 'Barry Allen',
         age: 24,
