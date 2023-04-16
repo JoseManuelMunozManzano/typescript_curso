@@ -611,4 +611,20 @@ noHaceNadaTampoco = noHaceNada;
     apocalipsis1.changeName('Xavier');
     console.log(apocalipsis1, apocalipsis2, apocalipsis3);
 })();
+(() => {
+    console.log('INTERFAZ BASICA');
+    let flash = {
+        name: 'Barry Allen',
+        age: 24,
+        powers: ['Súper velocidad', 'Viajar en el tiempo'],
+    };
+    let superman = {
+        name: 'Clark Kent',
+        age: 60,
+        powers: ['Súper fuerza'],
+        getName() {
+            return this.name;
+        },
+    };
+})();
 //# sourceMappingURL=main.js.map

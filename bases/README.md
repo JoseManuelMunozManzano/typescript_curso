@@ -6,6 +6,9 @@ https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
 Información oficial archivo tsconfig.json:
 https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
+Diferencias entre type e interface:
+https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces
+
 Proyecto creado con
 
 ```
