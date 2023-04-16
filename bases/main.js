@@ -627,4 +627,25 @@ noHaceNadaTampoco = noHaceNada;
         },
     };
 })();
+(() => {
+    console.log('ESTRUCTURAS COMPLEJAS');
+    const client = {
+        name: 'José M.',
+        age: 44,
+        address: {
+            id: 125,
+            zip: 'KY2 SUD',
+            city: 'Ottawa',
+        },
+    };
+    const client2 = {
+        name: 'Adri',
+        age: 40,
+        address: {
+            id: 12,
+            city: 'Toronto',
+            zip: 'K2S U23',
+        },
+    };
+})();
 //# sourceMappingURL=main.js.map
