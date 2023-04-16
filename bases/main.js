@@ -429,4 +429,23 @@ noHaceNadaTampoco = noHaceNada;
     const [, ironman, hulk, , fuerza] = avengersArr;
     console.log({ ironman, hulk });
 })();
+(() => {
+    console.log('FOR OF');
+    const ironman = {
+        name: 'Iron Man',
+        weapon: 'Armor suit',
+    };
+    const captainAmerica = {
+        name: 'Capitán América',
+        weapon: 'Shield',
+    };
+    const thor = {
+        name: 'Thor',
+        weapon: 'Mjolnir',
+    };
+    const avengers = [ironman, thor, captainAmerica];
+    for (const avenger of avengers) {
+        console.log(avenger.name, avenger.weapon);
+    }
+})();
 //# sourceMappingURL=main.js.map
