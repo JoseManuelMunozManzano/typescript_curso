@@ -30,9 +30,9 @@
 
   // Esto se puede, y por eso se recomienda el uso de las funciones flecha
   // TS se queja, pero JS lo acepta sin problemas.
-  getTeam = () => {
-    console.log('My new Team');
-  };
+  // getTeam = () => {
+  //   console.log('My new Team');
+  // };
 
   getTeam();
 })();
