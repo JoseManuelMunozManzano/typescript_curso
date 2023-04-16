@@ -648,4 +648,19 @@ noHaceNadaTampoco = noHaceNada;
         },
     };
 })();
+(() => {
+    console.log('METODOS EN INTERFACES');
+    const client = {
+        name: 'José M.',
+        age: 44,
+        address: {
+            id: 125,
+            zip: 'KY2 SUD',
+            city: 'Ottawa',
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        },
+    };
+})();
 //# sourceMappingURL=main.js.map
