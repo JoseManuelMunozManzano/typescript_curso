@@ -676,4 +676,11 @@ noHaceNadaTampoco = noHaceNada;
         }
     }
 })();
+(() => {
+    console.log('INTERFACES PARA LAS FUNCIONES');
+    let addNumbersFunction;
+    addNumbersFunction = (a, b) => {
+        return 10;
+    };
+})();
 //# sourceMappingURL=main.js.map
