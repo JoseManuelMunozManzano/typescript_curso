@@ -462,4 +462,19 @@ noHaceNadaTampoco = noHaceNada;
     console.log(antMan);
     console.log(Avenger.avgAge);
 })();
+(() => {
+    console.log('FORMA CORTA DE ASIGNAR PROPIEDADES');
+    class Avenger {
+        constructor(name, team, realName, avgAge = 55) {
+            this.name = name;
+            this.team = team;
+            this.realName = realName;
+            Avenger.avgAge = avgAge;
+        }
+    }
+    Avenger.avgAge = 35;
+    const antMan = new Avenger('Antman', 'Capitán', 'Scott Lang');
+    console.log(antMan);
+    console.log(Avenger.avgAge);
+})();
 //# sourceMappingURL=main.js.map
