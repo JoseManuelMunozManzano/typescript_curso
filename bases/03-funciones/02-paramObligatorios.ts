@@ -22,5 +22,5 @@
   // TS me deja hacerlo.
   // Esta es otra razón de por qué no es bueno usar any.
   let noName: any;
-  const name2 = fullName(noName, 'Stark');
+  //const name2 = fullName(noName, 'Stark');
 })();

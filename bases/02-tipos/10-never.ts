@@ -10,7 +10,7 @@
   };
 
   // Cuando llamamos a error, como la función devuelve never, sabemos que no va a seguir ejecutándose el código. El programa va a reventar.
-  error('Auxilio!!');
+  //error('Auxilio!!');
 
   // Esto ya no se ejecuta.
   console.log('No me voy a ejecutar');

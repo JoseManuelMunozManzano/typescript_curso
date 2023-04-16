@@ -124,7 +124,6 @@ console.log(hero);
     const error = (message) => {
         throw new Error(message);
     };
-    error('Auxilio!!');
     console.log('No me voy a ejecutar');
     const posibleError = (message) => {
         if (false) {
@@ -195,7 +194,6 @@ console.log(hero);
     const name = fullName('Tony', 'Startk');
     console.log({ name });
     let noName;
-    const name2 = fullName(noName, 'Stark');
 })();
 (() => {
     console.log('PARAMETROS OPCIONALES DE LAS FUNCIONES');
@@ -383,5 +381,21 @@ noHaceNadaTampoco = noHaceNada;
     let mystique;
     mystique = charles;
     mystique = apocalipsis;
+})();
+(() => {
+    console.log('LET');
+    const heroe = {
+        a: 1,
+        b: 2,
+    };
+    heroe.b = 100;
+    const getName = () => { };
+    function getTeam() {
+        console.log('My Team');
+    }
+    getTeam = () => {
+        console.log('My new Team');
+    };
+    getTeam();
 })();
 //# sourceMappingURL=main.js.map
