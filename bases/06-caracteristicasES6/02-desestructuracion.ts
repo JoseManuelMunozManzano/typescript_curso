@@ -30,4 +30,20 @@
   };
 
   printAvenger(avengers);
+
+  console.log('DESESTRUCTURACION DE ARREGLOS');
+
+  // Es una tupla
+  // Si como tipo indicáramos any[] entonces en la desestructuración, para TS, todo sería de tipo any.
+  const avengersArr: [string, string, string, boolean, number] = ['Cap. América', 'Ironman', 'Hulk', true, 150.24];
+
+  // Sintaxis fea
+  const ironmanFeo = avengersArr[1];
+  console.log({ ironmanFeo });
+
+  // Desestructuración
+  // Se indican comas hasta llegar al valor que quiero obtener.
+  // Es importante haber indicado los tipos porque TS sabe perfectamente que fuerza es un number y hulk un string.
+  const [, ironman, hulk, , fuerza] = avengersArr;
+  console.log({ ironman, hulk });
 })();

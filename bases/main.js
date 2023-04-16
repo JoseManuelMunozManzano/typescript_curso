@@ -422,5 +422,11 @@ noHaceNadaTampoco = noHaceNada;
         console.log(ironman, resto);
     };
     printAvenger(avengers);
+    console.log('DESESTRUCTURACION DE ARREGLOS');
+    const avengersArr = ['Cap. América', 'Ironman', 'Hulk', true, 150.24];
+    const ironmanFeo = avengersArr[1];
+    console.log({ ironmanFeo });
+    const [, ironman, hulk, , fuerza] = avengersArr;
+    console.log({ ironman, hulk });
 })();
 //# sourceMappingURL=main.js.map
