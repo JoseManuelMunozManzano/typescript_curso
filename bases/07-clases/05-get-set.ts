@@ -49,6 +49,6 @@
   console.log(wolverine.fullName);
 
   // Usando un setter y luego el getter
-  wolverine.fullName = 'Jo';
+  wolverine.fullName = 'José M.';
   console.log(wolverine.fullName);
 })();

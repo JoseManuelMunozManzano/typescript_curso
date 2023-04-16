@@ -557,7 +557,36 @@ noHaceNadaTampoco = noHaceNada;
     }
     const wolverine = new Xmen('Wolverine', 'Logan', true);
     console.log(wolverine.fullName);
-    wolverine.fullName = 'Jo';
+    wolverine.fullName = 'José M.';
     console.log(wolverine.fullName);
+})();
+(() => {
+    console.log('CLASES ABSTRACTAS');
+    class Mutante {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+        }
+    }
+    class Xmen extends Mutante {
+        salvarMundo() {
+            return 'Mundo a salvo!';
+        }
+    }
+    class Villian extends Mutante {
+        conquistarMundo() {
+            return 'Mundo conquistado';
+        }
+    }
+    let wolverine;
+    wolverine = new Xmen('Wolverine', 'Logan');
+    console.log(wolverine.salvarMundo());
+    const magneto = new Villian('Magneto', 'Magnus');
+    console.log(magneto.conquistarMundo());
+    const printName = (character) => {
+        console.log(character.realName);
+    };
+    printName(wolverine);
+    printName(magneto);
 })();
 //# sourceMappingURL=main.js.map
