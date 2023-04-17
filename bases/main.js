@@ -722,4 +722,15 @@ noHaceNadaTampoco = noHaceNada;
         }
     }
 })();
+var Validations;
+(function (Validations) {
+    console.log('CREANDO UN NAMESPACE');
+    Validations.validateText = (text) => {
+        return text.length > 3;
+    };
+    Validations.validateDate = (myDate) => {
+        return isNaN(myDate.valueOf()) ? false : true;
+    };
+})(Validations || (Validations = {}));
+console.log(Validations.validateText('José M.'));
 //# sourceMappingURL=main.js.map
