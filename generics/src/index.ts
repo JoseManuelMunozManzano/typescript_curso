@@ -1,6 +1,6 @@
 import { genericFunction, genericFunctionArrow, printObject } from './generics/generics';
-import { Hero } from './interrfaces/hero';
-import { Villain } from './interrfaces/villain';
+// No hace falta indicar index.ts porque se sobreentiende.
+import { Hero, Villain } from './interfaces';
 
 console.log('-----INTRODUCCION A LOS GENERICOS-----');
 // Una función genérica es una función que puede recibir cualquier tipo de argumento.
@@ -39,3 +39,6 @@ console.log(genericFunctionArrow<Hero>(deadpool).realName);
 // Pero IMPORTANTE: si al haber definido la constante deadpool no hubiéramos puesto la propiedad dangerLevel,
 // no me dejaría pasar como argumento deadpool. Me diría que falta esa property.
 console.log(genericFunctionArrow<Villain>(deadpool).dangerLevel);
+
+console.log('-----AGRUPAR EXPORTACIONES-----');
+// Ver interfaces/index.ts
