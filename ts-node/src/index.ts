@@ -20,6 +20,7 @@ import powers2, { Power } from './data/powers';
 const ironman = new Hero('Iron Man', 1, 45);
 console.log(ironman);
 console.log(powers2);
+console.log(ironman.power);
 
 // Client es el nombre de la clase que quiero importar, pero al haber hecho el alias, ahora no hay problema.
 const Client = new C_Client('Pepe', 49);
