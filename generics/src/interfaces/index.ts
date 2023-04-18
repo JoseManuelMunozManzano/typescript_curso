@@ -4,4 +4,5 @@
 // directorio.
 // Si el día de mañana Hero cambia de lugar solo tocamos aquí y evitamos así tener que tocar en un montón de sitios.
 export { Hero } from './hero';
+export { Pokemon } from './pokemon';
 export { Villain } from './villain';
