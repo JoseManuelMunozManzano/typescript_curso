@@ -3,7 +3,7 @@
 // Se ejecutan en tiempo de transpilación del código.
 // No suele ser normal crearlos, sino usarlos.
 // Claros exponentes del uso de los decoradores serían los frameworks Angular y Nest.
-import { Pokemon, Pokemon_2, Pokemon_3 } from './classes/pokemon';
+import { Pokemon, Pokemon_2, Pokemon_3, Pokemon_4 } from './classes/pokemon';
 
 const charmander = new Pokemon('Charmander');
 //console.log(charmander);
@@ -19,4 +19,9 @@ const pikachu = new Pokemon_2('Pikachu');
 //(Pokemon_2.prototype as any).customName = 'Meow';
 
 const bulbasaur = new Pokemon_3('Bulbasaur');
-bulbasaur.savePokemonToDB(-5);
+//bulbasaur.savePokemonToDB(5);
+
+const venusaur = new Pokemon_4('Venusaur');
+console.log(venusaur);
+
+venusaur.publicApi = 'No me deja hacerlo por el decorador. Para que me deje, indicar @readonly(false)';
