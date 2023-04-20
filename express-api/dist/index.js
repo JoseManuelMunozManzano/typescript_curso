@@ -1,7 +1,6 @@
+"use strict";
 // Se va a explicar como podemos usar librerías que no fueron escritas en TS y no tenemos soporte del mismo.
-
 // Usamos TS
-
 // https://expressjs.com/
 // Para instalar:
 // npm i express
@@ -30,15 +29,13 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-
 app.get('/', (req, res) => {
-  // res.send('Hello World!');
-  res.json({
-    ok: true,
-    msg: 'Todo salio bien',
-  });
+    // res.send('Hello World!');
+    res.json({
+        ok: true,
+        msg: 'Todo salio bien',
+    });
 });
-
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+    console.log(`Example app listening on port ${port}`);
 });
