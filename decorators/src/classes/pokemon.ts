@@ -34,7 +34,8 @@ const printToConsoleConditional = (print: boolean = false): Function => {
 // Luego bajar la aplicación y volver a subirla con npm start.
 //
 // Notar que este código se va a ejecutar sin tener que crear ninguna instancia.
-@printToConsole
+
+//@printToConsole
 export class Pokemon {
   public pubicApi: string = 'https://pokeapi.co';
 
@@ -42,10 +43,55 @@ export class Pokemon {
 }
 
 // Se pueden anidar decoradores sin problema. Se ejecutan de arriba a abajo
+
 @bloquearPrototipo
-@printToConsoleConditional(true)
+//@printToConsoleConditional(true)
 export class Pokemon_2 {
   public pubicApi: string = 'https://pokeapi.co';
 
   constructor(public name: string) {}
+}
+
+// Decoradores de métodos
+// Se supone que este decorador puede usarse en muchos métodos. Si no es así, otra opción sería usar este código
+// directamente en el método, sin crear este decorador.
+// Además indicar que este es un factory decorator.
+//
+// propertyKey, aunque puede llamarse de cualquier otro nombre, apunta a lo que está decorando (nombre del método).
+// descriptor permite poner el decorador de solo lectura o escritura.
+// target es la clase, por si queremos cambiar algo a nivel de clase.
+function checkValidPokemonId() {
+  return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+    // console.log({ target, propertyKey, descriptor });
+    // Ejemplo de uso de descriptor en el que se cambia lo que devuelve la función decorada por esta,
+
+    // por lo que se escribirá en consola Hola mundo.
+    // descriptor.value = () => console.log('Hola mundo');
+
+    // El id no puede ser menor a 1 o mayor a 800 porque no hay más de 800 pokemons.
+    const originalMethod = descriptor.value;
+
+    descriptor.value = (id: number) => {
+      if (id < 1 || id > 800) {
+        return console.error('El id del pokemon debe de estar entre 1 y 800');
+      } else {
+        // Para ejecutar el código que se estaba esperando, necesito el truco de declararlo fuera antes
+        // porque aquí dentro no puedo indicar descriptor.value, porque la estoy cambiando.
+        return originalMethod(id);
+      }
+    };
+  };
+}
+
+@bloquearPrototipo
+@printToConsoleConditional(true)
+export class Pokemon_3 {
+  public pubicApi: string = 'https://pokeapi.co';
+
+  constructor(public name: string) {}
+
+  @checkValidPokemonId()
+  savePokemonToDB(id: number) {
+    console.log(`Pokemon guardado en DB ${id}`);
+  }
 }
