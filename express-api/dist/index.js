@@ -1,5 +1,9 @@
 "use strict";
 // Se va a explicar como podemos usar librerías que no fueron escritas en TS y no tenemos soporte del mismo.
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 // Usamos TS
 // https://expressjs.com/
 // Para instalar:
@@ -19,21 +23,20 @@
 // Y se indica la propiedad "outDir": "./dist"
 //
 // Ejecutar con el mandato:
-// npm start
+// npm run build
 //
-// Para ejecutar JS directamente:
-// node dist/index.js
-//
-// Por tanto, hay que instalar:
-// npm i --save-dev @types/node
-const express = require('express');
-const app = express();
+// Por tanto, hay que instalar (AHORA SI!!):
+// npm i --save-dev @types/express
+// Y mágicamente se resuelven todos los errores y tengo la ayuda de TS.
+// Sustituimos el require por import
+const express_1 = __importDefault(require("express"));
+const app = (0, express_1.default)();
 const port = 3000;
 app.get('/', (req, res) => {
     // res.send('Hello World!');
-    res.json({
+    res.status(201).json({
         ok: true,
-        msg: 'Todo salio bien',
+        msg: 'Nuevo id: 123123',
     });
 });
 app.listen(port, () => {

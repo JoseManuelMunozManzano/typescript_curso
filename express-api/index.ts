@@ -20,22 +20,23 @@
 // Y se indica la propiedad "outDir": "./dist"
 //
 // Ejecutar con el mandato:
-// npm start
+// npm run build
 //
-// Para ejecutar JS directamente:
-// node dist/index.js
-//
-// Por tanto, hay que instalar:
-// npm i --save-dev @types/node
-const express = require('express');
+// Por tanto, hay que instalar (AHORA SI!!):
+// npm i --save-dev @types/express
+// Y mágicamente se resuelven todos los errores y tengo la ayuda de TS.
+
+// Sustituimos el require por import
+import express from 'express';
 const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
   // res.send('Hello World!');
-  res.json({
+
+  res.status(201).json({
     ok: true,
-    msg: 'Todo salio bien',
+    msg: 'Nuevo id: 123123',
   });
 });
 
