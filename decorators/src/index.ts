@@ -3,7 +3,10 @@
 // Se ejecutan en tiempo de transpilación del código.
 // No suele ser normal crearlos, sino usarlos.
 // Claros exponentes del uso de los decoradores serían los frameworks Angular y Nest.
-import { Pokemon } from './classes/pokemon';
+import { Pokemon, Pokemon_2 } from './classes/pokemon';
 
 const charmander = new Pokemon('Charmander');
 console.log(charmander);
+
+const pikachu = new Pokemon_2('Pikachu');
+console.log(pikachu);
