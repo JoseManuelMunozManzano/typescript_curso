@@ -1,3 +1,5 @@
+import { bloquearPrototipo } from './bloquea';
+
 // Decoradores de clases
 
 // Creación de un decorador
@@ -39,6 +41,8 @@ export class Pokemon {
   constructor(public name: string) {}
 }
 
+// Se pueden anidar decoradores sin problema. Se ejecutan de arriba a abajo
+@bloquearPrototipo
 @printToConsoleConditional(true)
 export class Pokemon_2 {
   public pubicApi: string = 'https://pokeapi.co';

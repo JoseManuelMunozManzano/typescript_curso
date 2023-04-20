@@ -9,4 +9,10 @@ const charmander = new Pokemon('Charmander');
 console.log(charmander);
 
 const pikachu = new Pokemon_2('Pikachu');
+// Aquí es donde intentaremos expandir nuestra clase Pokemon_2 y nos indicará, gracias a nuestro decorador,
+// que el objeto no es extensible.
+// Como TS sabe que no existe una propiedad llamada customName da error. Para evitar ese error
+// indicamos el as any.
+(Pokemon_2.prototype as any).customName = 'Meow';
+
 console.log(pikachu);
